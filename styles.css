@@ -1,0 +1,207 @@
+:root {
+    --mode-color1: #FFB6C1;
+    --mode-color2: #FFE4E1;
+    --mode-color3: #6F4E37;
+}
+
+body {
+    background-color: var(--mode-color2);
+    margin: 0;
+    transition: background-color 1s;
+}
+
+h1 {
+    position: relative;
+    bottom: -60px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;    
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    transition: color 1s
+}
+#hd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: var(--mode-color1);
+    transition: background-color 1s;
+}
+
+.logo,.navbar {
+    height: 80%;
+    width: 40%
+}
+
+.logotitle {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 220%;
+    text-align: center;
+    height: 80%;
+    width: 20%;
+    min-width: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact {
+    margin-right: 90px;
+    height: 90%;
+    width: 10%;
+    min-width: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 10 0 10;
+}
+.darkmode {
+    margin-right: 20px;
+    margin-left: -60px;
+    height: 90%;
+    width: 5%;
+    min-width: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+#togglemode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: inherit;
+}
+
+.searchbar {
+    margin-right: 2%;
+    background-color: var(--mode-color3);
+    border-radius: 90px;
+    height: 90%;
+    width: 30%;
+    opacity: 20%;
+    min-width: 150px;
+    transition: background-color 1s;
+}
+
+#uploadbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: 70px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    border-width: 5px;
+    border-color: black;
+    border-style: dashed;
+    border-spacing:5pc;
+    background-color: rgba(111,78,55, 25%);
+    width: 400px;
+    height: 400px;
+    transition: transform 200ms;
+    
+}
+
+#uploadbox:hover {
+    transform: scale(1.1)
+}
+
+#boxtext{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#boxtext2 {
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-overflow: clip;
+}
+
+#labeldiv {
+    margin: auto;
+    margin-top: 100px;
+    width: 25%;
+    height: 34px;
+}
+
+#submitlabel {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 5%;
+    font-size: 26px;
+    width: 50%;
+    min-width: 100px;
+    height: 34px;
+    background-color: var(--mode-color1);
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#buttonlabel {
+    position: absolute;
+    border-radius: 60px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#uploadbutton, #submitbutton {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logolabel, #contactlink {
+    text-decoration: none;
+    color: white;
+}
+
+.invert {
+    filter: invert(100%);
+    height: 100%;
+    width: 60%;
+    max-height: 60px;
+    max-width: 60px;
+    margin-left: 25%;
+}
+
+@media (max-width: 728px){
+    .contact {
+        position: absolute;
+        left: 10%;
+        margin-left: 0%;
+        padding-right: 10px;
+    }
+    .darkmode {
+        display: none;
+    }
+}
